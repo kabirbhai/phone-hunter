@@ -49,6 +49,19 @@ button:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
+.details{
+    border: 2px solid red;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+span{
+    color: blueviolet;
+}
 
 
 /* footer  */

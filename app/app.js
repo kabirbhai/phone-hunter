@@ -43,6 +43,21 @@ const detailsPhone = iD => {
     const url = `https://openapi.programming-hero.com/api/phone/${iD}`
     fetch(url)
         .then(res => res.json())
-        .then(data => console.log(data.data.mainFeatures))
+        .then(data => detailesInfo(data.data.releaseDate, data.data.image, data.data.mainFeatures.displaySize, data.data.mainFeatures.chipSet, data.data.mainFeatures.memory))
 }
 
+const detailesInfo = (a, b, c, d, e) => {
+    const detailsField = document.getElementById('details-field');
+    detailsField.textContent = '';
+    const div = document.createElement('div')
+    div.classList.add('details')
+    div.innerHTML = `
+    <img src="${b}" alt="loading">
+    <h2><span>ReleaseDate:</span> ${a}</h2>
+    <h2><span>displaySize:</span> ${c}</h2>
+    <h2><span>chipSet:</span> ${d}</h2>
+    <h2><span>mamory:</span> ${e}</h2>
+    `
+    detailsField.appendChild(div)
+}
+// DETAILE SECTION END 
