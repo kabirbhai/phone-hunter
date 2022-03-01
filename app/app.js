@@ -16,25 +16,33 @@ const displayPhone = phones => {
             <img src="${phone.image}" alt="loading">
             <h3>Name: ${phone.phone_name}</h3>
             <h3>Brand: ${phone.brand}</h3>
-            <button>Detailes</button>
+            <button onclick="detailsPhone('${phone.slug}')">Detailes</button>
         </div>
         <div class="card">
             <img src="${phone.image}" alt="loading">
             <h3>Name: ${phone.phone_name}</h3>
             <h3>Brand: ${phone.brand}</h3>
-            <button>Detailes</button>
+            <button onclick="detailsPhone('${phone.slug}')">Detailes</button>
         </div>
         <div class="card">
             <img src="${phone.image}" alt="loading">
             <h3>Name: ${phone.phone_name}</h3>
             <h3>Brand: ${phone.brand}</h3>
-            <button>Detailes</button>
+            <button onclick="detailsPhone('${phone.slug}')">Detailes</button>
         </div>
         `
         displayField.appendChild(div)
+        // console.log(phone)
     }
 }
 
 // DISPLAY SEARCH PHONE END ------------------------------
 
 // details section start 
+const detailsPhone = iD => {
+    const url = `https://openapi.programming-hero.com/api/phone/${iD}`
+    fetch(url)
+        .then(res => res.json())
+        .then(data => console.log(data.data.mainFeatures))
+}
+
