@@ -7,6 +7,9 @@ const loadPhone = () => {
 loadPhone()
 const displayData = phones => {
     for (const phone of phones) {
-        console.log(phone)
+        console.log(phone.brand)
+        console.log(phone.phone_name)
+        console.log(phone.slug)
+        console.log(phone.image)
     }
 }
