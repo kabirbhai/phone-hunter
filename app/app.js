@@ -1,15 +1,12 @@
-const loadPhone = () => {
-    const url = `https://openapi.programming-hero.com/api/phones?search=iphone`;
+const searchPhone = () => {
+    const inputValue = document.getElementById('input').value;
+    const url = `https://openapi.programming-hero.com/api/phones?search=${inputValue}`
     fetch(url)
         .then(res => res.json())
-        .then(data => displayData(data.data))
+        .then(data => displayPhone(data.data))
 }
-loadPhone()
-const displayData = phones => {
+const displayPhone = phones => {
     for (const phone of phones) {
-        console.log(phone.brand)
-        console.log(phone.phone_name)
-        console.log(phone.slug)
-        console.log(phone.image)
+        console.log(phone)
     }
 }

@@ -12,11 +12,20 @@ header {
 
 }
 
-input {
+#input {
     font-size: 2rem;
 }
 
-button {
+#search-button {
     font-size: 2rem;
 }
-
+/* ---------------------------main section style------------------------------- */
+#display-field{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.card{
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+}

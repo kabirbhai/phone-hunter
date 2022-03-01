@@ -16,13 +16,18 @@
 <body>
     <header>
         <div id="logo"></div>
-        <div class="input">
-            <input type="text" placeholder="Search here">
-            <button id="search-button">Search</button>
+        <div>
+            <input id="input" type="text" placeholder="Search here">
+            <button onclick="searchPhone()" id="search-button">Search</button>
         </div>
     </header>
+    <!-- header section end  -->
     <main>
-        <div id="display-field"></div>
+        <div id="display-field">
+            <div id="first" class="card">1</div>
+            <div id="second" class="card">2</div>
+            <div id="third" class="card">3</div>
+        </div>
     </main>
     <footer>
         <p>logo</p>
