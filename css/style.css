@@ -1,6 +1,22 @@
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    border: 2px solid;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+
+}
+
+input {
+    font-size: 2rem;
+}
+
+button {
+    font-size: 2rem;
+}
 
