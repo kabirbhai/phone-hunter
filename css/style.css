@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@600&family=Cabin:wght@700&family=Shizuru&display=swap');
+
 /* css reset  */
 *{
     margin: 0;
     padding: 0;
+}
+body{
     box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2', cursive;
 }
 header {
     border: 2px solid;
@@ -14,6 +19,8 @@ header {
 
 #input {
     font-size: 2rem;
+    border-radius: 10px;
+    padding: 9px;
 }
 
 #search-button {
@@ -23,8 +30,29 @@ header {
 #display-field{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    
 }
 .card{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     text-align: center;
+    padding: 10px;
+    margin: 15px 5px;
 }
+button{
+    font-size: 1.3rem;
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(43, 0, 83);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+/* footer  */
+/* footer{
+    background-color: blueviolet;
+
+} */
