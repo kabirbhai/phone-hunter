@@ -14,20 +14,20 @@ const displayPhone = phones => {
         div.innerHTML = `
         <div class="card">
             <img src="${phone.image}" alt="loading">
-            <h3>Name: ${phone.phone_name}</h3>
-            <h3>Brand: ${phone.brand}</h3>
+            <h3><span>Name:</span> ${phone.phone_name}</h3>
+            <h3><span>Brand:</span> ${phone.brand}</h3>
             <button onclick="detailsPhone('${phone.slug}')">Detailes</button>
         </div>
         <div class="card">
             <img src="${phone.image}" alt="loading">
-            <h3>Name: ${phone.phone_name}</h3>
-            <h3>Brand: ${phone.brand}</h3>
+            <h3><span>Name:</span> ${phone.phone_name}</h3>
+            <h3><span>Brand:</span> ${phone.brand}</h3>
             <button onclick="detailsPhone('${phone.slug}')">Detailes</button>
         </div>
         <div class="card">
             <img src="${phone.image}" alt="loading">
-            <h3>Name: ${phone.phone_name}</h3>
-            <h3>Brand: ${phone.brand}</h3>
+            <h3><span>Name:</span> ${phone.phone_name}</h3>
+            <h3><span>Brand:</span> ${phone.brand}</h3>
             <button onclick="detailsPhone('${phone.slug}')">Detailes</button>
         </div>
         `

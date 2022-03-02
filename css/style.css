@@ -78,7 +78,6 @@ a{
     
 }
 .card{
-    /* border: 2px solid red; */
     background-color: rgb(255, 255, 255);
     box-shadow: 3px 8px 10px 2px rgba(55,100,110,0.56);
     border-radius: 15px;
@@ -113,7 +112,7 @@ span{
     color:rgb(226 133 72);
 }
 
-/* mediaquary   */
+/* mediaquary  for  phone*/
 @media only screen and (max-width: 599px) { 
     header{
         flex-direction: column;
@@ -128,8 +127,8 @@ span{
         grid-template-columns: repeat(1, 1fr);
     }
  }
-
-@media only screen and (min-width: 600px)and (max-width: 900px){
+ /* mediaquiry for tablate */
+@media only screen and (min-width: 600px) and (max-width: 900px){
     header{
         flex-direction: column;
     }
