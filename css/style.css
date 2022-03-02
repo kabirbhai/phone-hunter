@@ -120,6 +120,10 @@ span{
         align-items: center;
 
     }
+    #input-field{
+        font-size: 22px;
+        text-align: center;
+    }
     #login-info{
         margin-top: 10px;
     }
@@ -132,6 +136,7 @@ span{
     header{
         flex-direction: column;
     }
+    
     #login-info{
         margin-top: 10px;
     }

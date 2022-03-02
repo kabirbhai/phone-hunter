@@ -58,7 +58,7 @@ const detailesInfo = (a, b, c, d, e) => {
     div.classList.add('details')
     div.innerHTML = `
     <img src="${b}" alt="loading">
-    <h2><span>ReleaseDate:</span> ${a}</h2>
+    <h2><span>ReleaseDate:</span> ${a ? yes : no}</h2>
     <h2><span>displaySize:</span> ${c}</h2>
     <h2><span>chipSet:</span> ${d}</h2>
     <h2><span>mamory:</span> ${e}</h2>
