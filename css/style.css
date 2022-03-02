@@ -10,11 +10,58 @@ body{
     font-family: 'Baloo Bhaijaan 2', cursive;
 }
 header {
-    border: 2px solid;
+    position: relative;
+    /* border: 2px solid; */
+    /* height: 333px; */
     padding: 40px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 
+}
+header::before{
+    content: '';
+    background: url(../img.jpg)no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+}
+#logo{
+    font-size: 1.9rem;
+    font-weight: 800;
+    background-image: linear-gradient(60deg, #be91e9, #e0b78d);
+    color: black;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+}
+#login{
+    background-color: aqua;
+    padding: 6px 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#sign-up{
+    background-color: rgb(240, 182, 255);
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+#login:hover{
+    background-color: rgb(60, 140, 172);
+    color: wheat;
+}
+#sign-up:hover{
+    background-color: rgb(189, 128, 240);
+    color: wheat;
 }
 
 #input {
@@ -34,9 +81,12 @@ header {
 }
 .card{
     /* border: 2px solid red; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 8px 10px 2px rgba(55,100,110,0.56);
+    border-radius: 15px;
     text-align: center;
     padding: 10px;
-    margin: 15px 5px;
+    margin: 15px 15px;
 }
 button{
     font-size: 1.3rem;
@@ -45,27 +95,36 @@ button{
     padding: 5px;
 }
 button:hover{
-    background-color: rgb(43, 0, 83);
+    background-color: rgb(60, 140, 172);
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 .details{
-    border: 2px solid red;
     width: 50%;
     margin: auto;
+    margin-top: 5px;
     border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 8px 10px 2px rgba(55,100,110,0.56);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 span{
-    color: blueviolet;
+    color:rgb(226 133 72);
 }
 
+/* mediaquary   */
+@media only screen and (max-width: 599px) { 
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-/* footer  */
-/* footer{
-    background-color: blueviolet;
-
-} */
+    }
+    #display-field{
+        grid-template-columns: repeat(1, 1fr);
+    }
+ }
+ 
