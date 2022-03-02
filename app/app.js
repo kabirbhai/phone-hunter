@@ -9,9 +9,10 @@ const searchPhone = () => {
 const displayPhone = phones => {
     const displayField = document.getElementById('display-field')
     displayField.textContent = '';
-    for (const phone of phones) {
-        const div = document.createElement('div')
-        div.innerHTML = `
+    if (phones != !phones) {
+        for (const phone of phones) {
+            const div = document.createElement('div')
+            div.innerHTML = `
         <div class="card">
             <img src="${phone.image}" alt="loading">
             <h3><span>Name:</span> ${phone.phone_name}</h3>
@@ -31,9 +32,13 @@ const displayPhone = phones => {
             <button onclick="detailsPhone('${phone.slug}')">Detailes</button>
         </div>
         `
-        displayField.appendChild(div)
-        // console.log(phone)
+            displayField.appendChild(div)
+        }
     }
+    else {
+        alert('not phone found')
+    }
+
 }
 
 // DISPLAY SEARCH PHONE END ------------------------------
